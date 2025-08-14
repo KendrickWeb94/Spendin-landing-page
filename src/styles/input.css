@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #7c5cfc;
+    --color-dark-bg: #161b27;
+    --color-dark-primary: #191e2a;
+    --color-paragraph: #90a3bf;
+    --color-heading: #ffffff;
+  }
+}
+
+@theme {
+  --color-primary: #7c5cfc;
+  --color-dark-bg: #161b27;
+  --color-dark-primary: #191e2a;
+  --color-paragraph: #90a3bf;
+  --color-heading: #ffffff;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-plus: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .bg-dark-bg {
+    background-color: var(--color-dark-bg);
+  }
+  .bg-dark-primary {
+    background-color: var(--color-dark-primary);
+  }
+  .text-paragraph {
+    color: var(--color-paragraph);
+  }
+  .text-heading {
+    color: var(--color-heading);
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-3xl bg-primary text-white;
+  }
+  .card {
+    @apply bg-dark-bg p-6 rounded-lg shadow-lg;
+  }
+}
+/* npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch */
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../fonts/plus-jarkata-sans/PlusJakartaSans-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../fonts/plus-jarkata-sans/PlusJakartaSans-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../fonts/plus-jarkata-sans/PlusJakartaSans-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../fonts/plus-jarkata-sans/PlusJakartaSans-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../fonts/plus-jarkata-sans/PlusJakartaSans-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+}
