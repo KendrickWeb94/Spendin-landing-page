@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+html {
+  font-size: 16px;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
 @layer base {
   :root {
     --color-primary: #7c5cfc;
@@ -7,14 +16,18 @@
     --color-dark-primary: #191e2a;
     --color-paragraph: #90a3bf;
     --color-heading: #ffffff;
+    --color-paragraph-dark: #596780;
+    --color-secondary: #040815;
   }
 }
 
 @theme {
   --color-primary: #7c5cfc;
   --color-dark-bg: #161b27;
+  --color-paragraph-dark: #596780;
   --color-dark-primary: #191e2a;
   --color-paragraph: #90a3bf;
+  --color-secondary: #040815;
   --color-heading: #ffffff;
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-plus: "Plus Jakarta Sans", sans-serif;
@@ -36,15 +49,40 @@
   .text-heading {
     color: var(--color-heading);
   }
+  .text-paragraph-dark {
+    color: var(--color-paragraph-dark);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
 }
 
 @layer components {
   .btn {
-    @apply px-4 py-2 rounded-3xl bg-primary text-white;
+    @apply px-4 py-3 rounded-3xl bg-primary font-medium text-sm opacity-90 hover:opacity-100 text-white;
+  }
+  .btn-secondary {
+    @apply px-4 py-3 rounded-3xl bg-white/5 font-medium text-sm opacity-90 hover:bg-white text-white hover:text-black;
   }
   .card {
     @apply bg-dark-bg p-6 rounded-lg shadow-lg;
   }
+  .smooth {
+    @apply transition-all ease-in-out delay-300 duration-300;
+  }
+  .mx-center {
+    @apply mx-auto w-full max-w-[90%];
+  }
+  .nav-list-item {
+    @apply relative text-white;
+  }
+  .active-state {
+    @apply bg-primary text-white rounded-3xl;
+  }
+}
+
+.nav-link-active {
+  color: var(--color-primary);
 }
 /* npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch */
 
@@ -92,4 +130,9 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
+}
+.grid-cat-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
 }

@@ -45,17 +45,450 @@
     <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
   </head>
   <body class="bg-white">
-    <label class="inline-flex items-center cursor-pointer">
-      <span class="me-3 text-sm font-semibold text-gray-900 dark:text-gray-300"
-        >Monthly</span
-      >
-      <input type="checkbox" value="" class="sr-only peer" />
+    <section
+      class="hero-section overflow-hidden bg-dark-bg w-full h-auto min-h-auto relative"
+    >
       <div
-        class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-transparent dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary dark:peer-checked:bg-primary/80"
+        class="w-65 h-65 rounded-full bg-gradient-to-tl from-primary/90 to-primary blur-[35rem] absolute top-[-13rem] left-0"
       ></div>
-      <span class="ms-3 text-sm font-semibold text-gray-900 dark:text-gray-300"
-        >Yearly</span
+      <div
+        class="max-w-[30rem] w-full h-full max-h-[30rem] rounded-full bg-transparent border-[4rem] border-white/5 absolute top-[-12rem] right-[-12rem]"
+      ></div>
+      <div
+        class="max-w-[30rem] w-full h-full max-h-[30rem] rounded-full bg-transparent border-[4rem] border-white/5 absolute bottom-[-12rem] left-[-12rem]"
+      ></div>
+
+      <header class="relative z-10">
+        <nav class="py-4 w-full border border-white/10">
+          <div class="mx-center px-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2" tabindex="0">
+              <img
+                src="./assets/icons/Logo.svg"
+                aria-label="SpendIn Logo this also serves as a navigation to the home page"
+                alt="SpendIn logo"
+                class="h-8"
+              />
+              <span class="sr-only">SpendIn Logo</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <ul
+              class="hidden md:flex nav-wrapper items-center font-medium justify-center gap-6"
+            >
+              <li class="nav-list-item nav-link-active relative">
+                <a href="/">Home</a>
+              </li>
+              <li class="nav-list-item relative">
+                <a href="#Products">Products</a>
+              </li>
+              <li class="nav-list-item relative">
+                <a href="#Benefit">Benefit</a>
+              </li>
+              <li class="nav-list-item relative">
+                <a href="#How-it-works">How it Works</a>
+              </li>
+              <li class="nav-list-item relative">
+                <a href="#Pricing">Pricing</a>
+              </li>
+              <li class="nav-list-item relative">
+                <a href="#Company">Company</a>
+              </li>
+            </ul>
+
+            <!-- Desktop Actions -->
+            <div class="hidden md:flex items-center gap-4">
+              <a
+                href="#login"
+                class="text-paragraph font-semibold smooth hover:underline underline-offset-4"
+                >Login</a
+              >
+              <button class="btn">Get Demo</button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button
+              id="menu-btn"
+              class="md:hidden focus:outline-none z-50 relative"
+              aria-label="Open menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#f9f9f9"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M224,160a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,160ZM40,104H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile Menu Sheet -->
+          <div
+            id="mobile-menu"
+            class="fixed inset-0 bg-black/40 backdrop-blur-sm smooth transition-all duration-700 delay-700 ease-in-out z-40 hidden"
+          >
+            <div
+              id="close-navbar"
+              class="fixed top-0 left-0 w-3/4 max-w-sm h-full bg-white dark:bg-gray-900 shadow-lg p-6 flex flex-col"
+            >
+              <!-- Close Btn -->
+              <button
+                id="close-navbar"
+                class="self-end mb-6 text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                aria-label="Close menu"
+              >
+                ✕
+              </button>
+
+              <!-- Mobile Nav -->
+              <ul class="flex flex-col gap-6 font-medium">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li>
+                  <a href="#Products" class="hover:underline">Products</a>
+                </li>
+                <li><a href="#Benefit" class="hover:underline">Benefit</a></li>
+                <li>
+                  <a href="#How-it-works" class="hover:underline"
+                    >How it Works</a
+                  >
+                </li>
+                <li><a href="#Pricing" class="hover:underline">Pricing</a></li>
+                <li><a href="#Company" class="hover:underline">Company</a></li>
+              </ul>
+
+              <!-- Mobile Actions -->
+              <div class="mt-auto flex flex-col gap-4">
+                <a
+                  href="#login"
+                  class="text-paragraph font-semibold hover:underline underline-offset-4"
+                  >Login</a
+                >
+                <button class="btn w-full">Get Demo</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section
+          class="pt-10 md:pt-16 w-full mx-center flex justify-center items-center space-y-4"
+        >
+          <div class="space-y-8">
+            <h1
+              class="text-heading text-3xl text-shadow-2xs sm:text-4xl md:text-6xl font-inter leading-[1.2] font-bold text-start md:text-center"
+            >
+              All your business <br class="hidden md:block" />
+              expenses in one place.
+            </h1>
+            <p class="text-paragraph text-balance md:text-center font-plus">
+              Your one-stop finance empower platform. Manage
+              <br class="hidden md:block" />
+              all your business expenses with our supafast app.
+            </p>
+            <div
+              class="flex items-center justify-center flex-col md:flex-row gap-4 md:gap-6"
+            >
+              <button class="btn w-full md:w-fit">Get a Free Demo</button>
+              <button class="btn-secondary smooth w-full md:w-fit">
+                See Pricing
+              </button>
+            </div>
+            <div class="max-w-5xl h-full">
+              <img src="./assets/img/Dashboard.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </header>
+    </section>
+    <section class="mx-center py-24 min-h-dvh">
+      <div class="space-y-8">
+        <h1 class="uppercase font-plus font-semibold text-xl text-primary">
+          WHY USE SPEND.IN
+        </h1>
+        <div class="flex flex-wrap items-baseline gap-16">
+          <h2 class="font-plus font-bold leading-[1.3] text-5xl">
+            Easy, Simple, <br />
+            Affordable
+          </h2>
+          <div class="md:max-w-xl w-full">
+            <p
+              class="text-paragraph-dark font-medium text-lg text-balance leading-[1.8]"
+            >
+              Our platform helps your business in managing expenses. These are
+              some of the reasons why you should use our platform in managing
+              business finances.
+            </p>
+          </div>
+        </div>
+        <div class="w-full grid-cat-3">
+          <div class="space-y-4">
+            <div class="image-container">
+              <img
+                src="./assets/img/Frame1.png"
+                alt="graphic"
+                class="w-full"
+                aria-label="a graphic photo of SpendIn product feature that enables automatic invoice payments"
+              />
+              <span class="sr-only">
+                a graphic photo of SpendIn product feature that enables
+                automatic invoice payments
+              </span>
+            </div>
+            <div class="space-y-2">
+              <h1 class="text-2xl text-secondary font-bold">
+                Automatic Invoice Payment
+              </h1>
+              <p class="text-paragraph-dark font-medium leading-[1.6] w-full">
+                No need to pay manually, we provide automatic invoice payment
+                service! Set a payment schedule and you're done, it's that easy.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="image-container">
+              <img
+                src="./assets/img/Frame2.png"
+                alt="graphic"
+                class="w-full"
+                aria-label="a graphic photo of SpendIn product feature that enables automatic invoice payments"
+              />
+              <span class="sr-only">
+                a graphic photo of SpendIn product feature that enables
+                automatic invoice payments
+              </span>
+            </div>
+            <div class="space-y-2">
+              <h1 class="text-2xl text-secondary font-bold">
+                Clear payment history
+              </h1>
+              <p class="text-paragraph-dark font-medium leading-[1.6] w-full">
+                Still writing manual expenses? Our platform breaks down every
+                expense you log down to the millisecond.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="image-container">
+              <img
+                src="./assets/img/Frame3.png"
+                alt="graphic"
+                class="w-full"
+                aria-label="a graphic photo of SpendIn product feature that enables automatic invoice payments"
+              />
+              <span class="sr-only">
+                a graphic photo of SpendIn product feature that enables
+                automatic invoice payments
+              </span>
+            </div>
+            <div class="space-y-2">
+              <h1 class="text-2xl text-secondary font-bold">
+                Use of multi-card payments
+              </h1>
+              <p
+                class="text-paragraph-dark text-base font-medium leading-[1.6] w-full"
+              >
+                Have more than 1 bank account or credit/debit card? Our platform
+                is already integrated with many banks around the world, for
+                easier payments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-dark-bg overflow-hidden">
+      <div
+        class="mx-center py-12 flex flex-wrap-reverse md:items-center n gap-8 md:gap-16"
       >
-    </label>
+        <div class="md:max-w-[50%] max-h-[536px] h-full object-contain w-full">
+          <img
+            src="./assets/img/Content-1.png"
+            class="w-full h-full object-contain"
+            alt=""
+          />
+        </div>
+        <div class="space-y-6 md:max-w-[50%]">
+          <h1 class="uppercase font-plus font-semibold text-xl text-primary">
+            HOW IT WORKS
+          </h1>
+          <h2 class="font-plus text-heading font-bold leading-[1.3] text-4xl">
+            Few Easy Steps and Done
+          </h2>
+          <p class="text-paragraph text-balance font-plus leading-[1.8]">
+            In just few easy step, you are all set to manage your business
+            <br class="md:block hidden" />
+            finances. Manage all expenses with Spend.In all in one place.
+          </p>
+          <img src="./assets/img/Stepper.png" class="max-w-sm" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="mx-center py-24 w-full min-h-dvh">
+      <div class="space-y-6">
+        <div class="space-y-4">
+          <h1 class="uppercase font-plus font-semibold text-xl text-primary">
+            INCREASE PRODUCTIVITY
+          </h1>
+          <h2 class="font-plus font-bold leading-[1.3] text-2xl md:text-4xl">
+            Reduce Time in Doing Manual Work <br class="md:block hidden" />
+            & Managing Expenses
+          </h2>
+        </div>
+        <div class="flex items-center flex-wrap justify-between gap-16">
+          <div class="space-y-8">
+            <div
+              class="rounded-3xl w-fit overflow-hidden text-paragraph bg-[#F3F5F7] flex items-center gap-4 text-sm"
+            >
+              <button
+                class="px-6 py-3 success-switch active-state font-semibold"
+              >
+                With spendIn
+              </button>
+              <button
+                class="px-6 py-3 success-switch font-semibold roudned-3xl"
+              >
+                Without spendIn
+              </button>
+            </div>
+            <div class="space-y-6 relative">
+              <h4 class="font-bold text-secondary text-2xl">
+                Track Business Expenses until its Milisecond
+              </h4>
+              <div class="relative">
+                <ul
+                  class="space-y-6 md:max-w-lg w-full transition-opacity duration-500 absolute opacity-0 top-0 left-0"
+                  id="failed-text"
+                >
+                  <li class="flex items-start gap-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="#FF4423"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm37.66,130.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                      ></path>
+                    </svg>
+                    <p class="font-medium text-paragraph-dark leading-[1.6]">
+                      Complex recording process due to every administrative file
+                      in a different place.
+                    </p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="24"
+                      fill="#FF4423"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm37.66,130.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                      ></path>
+                    </svg>
+                    <p class="font-medium text-paragraph-dark leading-[1.6]">
+                      Need more effort to pay manually one by one invoice
+                      because there is no payment accommodation.
+                    </p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="24"
+                      fill="#FF4423"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm37.66,130.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                      ></path>
+                    </svg>
+                    <p class="font-medium text-paragraph-dark leading-[1.6]">
+                      Manual data arranging needs a long time because the
+                      different months/years are not in the same place.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <ul
+                class="space-y-6 md:max-w-lg w-full transition-opacity duration-500 opacity-100"
+                id="success-text"
+              >
+                <li class="flex items-start gap-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="32"
+                    fill="#9CD323"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                  <p class="font-medium text-paragraph-dark leading-[1.6]">
+                    Analyze your business cost easily with group transaction
+                    thorugh tagging feature.
+                  </p>
+                </li>
+                <li class="flex items-start gap-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38"
+                    height="32"
+                    fill="#9CD323"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                  <p class="font-medium text-paragraph-dark leading-[1.6]">
+                    Add more than one card for payment. Integrated with more
+                    than 50+ payment method and support bulk payment.
+                  </p>
+                </li>
+                <li class="flex items-start gap-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="32"
+                    fill="#9CD323"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                  <p class="font-medium text-paragraph-dark leading-[1.6]">
+                    Arrange your business expenses by date, name, etc., with
+                    just one click.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:w-[40%] relative">
+            <img
+              src="./assets/img/Success-Stories.png"
+              class="w-full transition-opacity duration-500 opacity-100"
+              id="success-img"
+              alt="With SpendIn"
+            />
+            <img
+              src="./assets/img/failed-Success-Stories.png"
+              class="w-full transition-opacity duration-500 opacity-0 absolute top-0 left-0"
+              id="failed-img"
+              alt="Without SpendIn"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./src/js/app.js"></script>
   </body>
 </html>
