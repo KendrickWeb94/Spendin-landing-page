@@ -136,3 +136,48 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
 }
+
+.grid-cat-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.swiper-button-custom {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; /* full circle */
+  color: #e2e8f0;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev-custom {
+  background-color: var(
+    --color-paragraph-dark
+  ); /* Darker background for prev button */
+}
+.swiper-button-next-custom {
+  background-color: var(
+    --color-primary
+  ); /* Light purple background for next button */
+}
+
+.swiper-button-prev-custom:hover {
+  background-color: #3f4253;
+}
+.swiper-button-next-custom:hover {
+  background-color: var(--color-primary);
+}
+
+/* SVG icon styling to mimic the image */
+.arrow-icon {
+  stroke: #e2e8f0;
+  stroke-width: 2;
+  fill: none;
+  transition: stroke 0.3s ease;
+}

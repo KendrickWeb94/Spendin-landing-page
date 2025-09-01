@@ -20,10 +20,23 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./src/styles/output.css" />
+    <link rel="stylesheet" href="./src/styles/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Open Graph / Facebook -->
     <meta
       property="og:title"
       content="SpendIn - Smart Personal Finance & Expense Tracker"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
     />
     <meta
       property="og:description"
@@ -133,7 +146,7 @@
           >
             <div
               id="close-navbar"
-              class="fixed top-0 left-0 w-3/4 max-w-sm h-full bg-white dark:bg-gray-900 shadow-lg p-6 flex flex-col"
+              class="fixed top-0 left-0 w-3/4 max-w-sm h-full bg-dark-primary dark:bg-gray-900 shadow-lg p-6 flex flex-col"
             >
               <!-- Close Btn -->
               <button
@@ -145,7 +158,7 @@
               </button>
 
               <!-- Mobile Nav -->
-              <ul class="flex flex-col gap-6 font-medium">
+              <ul class="flex flex-col text-paragraph gap-6 font-medium">
                 <li><a href="/" class="hover:underline">Home</a></li>
                 <li>
                   <a href="#Products" class="hover:underline">Products</a>
@@ -489,6 +502,663 @@
         </div>
       </div>
     </section>
+    <section class="bg-dark-bg py-24 overflow-hidden">
+      <div class="space-y-8 mx-center">
+        <h3
+          class="uppercase font-plus md:text-center font-semibold text-xl text-primary"
+        >
+          what they say
+        </h3>
+
+        <h2
+          class="font-plus text-heading md:text-center font-bold leading-[1.3] text-4xl"
+        >
+          Our User Kind Words
+        </h2>
+        <p class="text-paragraph md:text-center">
+          Here are some testimonials from our user after using Spend.In to
+          <br class="md:block hidden" />
+          manage their business expenses.
+        </p>
+        <!-- Swiper container -->
+        <!-- Swiper container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper gap-4">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="bg-[#1A202C] p-6 rounded-xl space-y-6 text-paragraph">
+                <h3 class="text-lg font-medium">Amazing Service</h3>
+                <p class="text-gray-300">
+                  "This platform has completely changed how I manage my
+                  workflow. Highly recommended!"
+                </p>
+                <div class="w-full bg-gray-100/20 h-[0.5px]"></div>
+                <div class="flex items-center gap-4 pt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/19.jpg"
+                    class="w-12 h-12 rounded-lg object-cover"
+                    alt="Sophia Bennett"
+                  />
+                  <div>
+                    <p class="font-medium">Sophia Bennett</p>
+                    <p class="text-sm text-gray-400">Product Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="bg-[#1A202C] p-6 rounded-xl space-y-6 text-paragraph">
+                <h3 class="text-lg font-medium">Outstanding Support</h3>
+                <p class="text-gray-300">
+                  "The customer support team was responsive and solved my issue
+                  within minutes."
+                </p>
+                <div class="w-full bg-gray-100/20 h-[0.5px]"></div>
+                <div class="flex items-center gap-4 pt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/82.jpg"
+                    class="w-12 h-12 rounded-lg object-cover"
+                    alt="Ethan Walker"
+                  />
+                  <div>
+                    <p class="font-medium">Ethan Walker</p>
+                    <p class="text-sm text-gray-400">Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="bg-[#1A202C] p-6 rounded-xl space-y-6 text-paragraph">
+                <h3 class="text-lg font-medium">User Friendly</h3>
+                <p class="text-gray-300">
+                  "The interface is intuitive and simple to use. I love the
+                  smooth experience."
+                </p>
+                <div class="w-full bg-gray-100/20 h-[0.5px]"></div>
+                <div class="flex items-center gap-4 pt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/3.jpg"
+                    class="w-12 h-12 rounded-lg object-cover"
+                    alt="Ava Mitchell"
+                  />
+                  <div>
+                    <p class="font-medium">Ava Mitchell</p>
+                    <p class="text-sm text-gray-400">UX Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
+              <div class="bg-[#1A202C] p-6 rounded-xl space-y-6 text-paragraph">
+                <h3 class="text-lg font-medium">Great Performance</h3>
+                <p class="text-gray-300">
+                  "Fast, reliable, and scalable. I couldn’t ask for a better
+                  solution."
+                </p>
+                <div class="w-full bg-gray-100/20 h-[0.5px]"></div>
+                <div class="flex items-center gap-4 pt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/4.jpg"
+                    class="w-12 h-12 rounded-lg object-cover"
+                    alt="Liam Harris"
+                  />
+                  <div>
+                    <p class="font-medium">Liam Harris</p>
+                    <p class="text-sm text-gray-400">DevOps Engineer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="swiper-slide">
+              <div class="bg-[#1A202C] p-6 rounded-xl space-y-6 text-paragraph">
+                <h3 class="text-lg font-medium">Highly Secure</h3>
+                <p class="text-gray-300">
+                  "Security is top-notch, and I feel confident trusting my data
+                  here."
+                </p>
+                <div class="w-full bg-gray-100/20 h-[0.5px]"></div>
+                <div class="flex items-center gap-4 pt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/5.jpg"
+                    class="w-12 h-12 rounded-lg object-cover"
+                    alt="Olivia Carter"
+                  />
+                  <div>
+                    <p class="font-medium">Olivia Carter</p>
+                    <p class="text-sm text-gray-400">Data Analyst</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="swiper-slide">
+              <div class="bg-[#1A202C] p-6 rounded-xl space-y-6 text-paragraph">
+                <h3 class="text-lg font-medium">Flexible and Powerful</h3>
+                <p class="text-gray-300">
+                  "I can customize everything I need without any hassle. Perfect
+                  for my projects."
+                </p>
+                <div class="w-full bg-gray-100/20 h-[0.5px]"></div>
+                <div class="flex items-center gap-4 pt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/6.jpg"
+                    class="w-12 h-12 rounded-lg object-cover"
+                    alt="Noah Davis"
+                  />
+                  <div>
+                    <p class="font-medium">Noah Davis</p>
+                    <p class="text-sm text-gray-400">Full-Stack Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper pagination + nav -->
+          <div class="flex justify-center items-center mt-8 space-x-4">
+            <div class="swiper-button-prev-custom swiper-button-custom">
+              <svg class="arrow-icon w-6 h-6" viewBox="0 0 24 24">
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="swiper-button-next-custom swiper-button-custom">
+              <svg class="arrow-icon w-6 h-6" viewBox="0 0 24 24">
+                <path
+                  d="M9 18L15 12L9 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="min-h-dvh w-full mx-center py-24">
+      <div class="space-y-8">
+        <div class="space-y-4 md:text-center">
+          <h1 class="text-dark-primary font-plus font-bold text-3xl">
+            Ready to Get Started?
+          </h1>
+          <p class="text-paragraph-dark">
+            Choose a plan that suits your business needs
+          </p>
+        </div>
+        <div class="flex items-center justify-center flex-col gap-1">
+          <label class="inline-flex items-center cursor-pointer">
+            <span
+              class="me-3 text-sm font-semibold text-gray-900 dark:text-gray-300"
+              >Monthly</span
+            >
+            <input
+              id="priceSwitch"
+              type="checkbox"
+              value=""
+              class="sr-only peer"
+            />
+            <div
+              class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-transparent dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary dark:peer-checked:bg-primary/80"
+            ></div>
+            <span
+              class="ms-3 text-sm font-semibold text-gray-900 dark:text-gray-300"
+              >Yearly</span
+            >
+          </label>
+          <img
+            src="./assets/img/Discount.png"
+            alt="60% off discount"
+            aria-label="60% off discount"
+          />
+        </div>
+        <div class="w-full mx-auto md:max-w-[88%]">
+          <div class="grid-cat-4">
+            <div class="rounded-xl bg-[#F3F5F7] p-4 space-y-8">
+              <div class="space-y-4">
+                <div class="w-full flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <img src="./assets/icons/lovely.svg" alt="" />
+                    <h1 class="text-3xl font-semibold font-plus">Free</h1>
+                  </div>
+                </div>
+                <p class="text-paragraph-dark font-medium">
+                  Perfect plan to get started
+                </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <h1
+                  id="price0"
+                  class="text-4xl font-semibold text-dark-primary"
+                >
+                  $0
+                </h1>
+                <p id="priceText0" class="text-paragraph">/ month</p>
+              </div>
+              <p class="text-dark-primary">
+                A free plan grants you access to some cool features of Spend.In.
+              </p>
+              <ul class="flex flex-col gap-6">
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Sync accross devices</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">5 workspaces</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Collaborate with 5 users</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-x-circle text-xl text-gray-400"></i>
+                  <p class="font-semibold text-gray-400">Sharing permission</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-x-circle text-xl text-gray-400"></i>
+                  <p class="font-semibold text-gray-400">100+ integrations</p>
+                </li>
+              </ul>
+              <button class="btn font-semibold w-full">
+                Get Your Free Plan
+              </button>
+            </div>
+            <div class="rounded-xl bg-[#F3F5F7] p-4 space-y-8">
+              <div class="space-y-4">
+                <div class="w-full flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <img src="./assets/icons/crown.svg" alt="" />
+                    <h1 class="text-3xl font-semibold font-plus">Pro</h1>
+                  </div>
+                  <p class="text px-4 py-1 bg-black text-white rounded-full">
+                    Popular
+                  </p>
+                </div>
+                <p class="text-paragraph-dark font-medium">
+                  Perfect plan for professionals!
+                </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <h1
+                  id="price2"
+                  class="text-4xl font-semibold text-dark-primary"
+                >
+                  $12.99
+                </h1>
+                <p id="priceText1" class="text-paragraph">/ month</p>
+              </div>
+              <p class="text-dark-primary">
+                For professional only! Start arranging your expenses with our
+                best templates.
+              </p>
+              <ul class="flex flex-col gap-6">
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Everything in free plan</p>
+                </li>
+
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Unlimited workspace</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Collaborative workspace</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-x-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Sharing permission</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-x-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">100+ integrations</p>
+                </li>
+              </ul>
+              <button class="btn font-semibold w-full align-bottom">
+                Get Started
+              </button>
+            </div>
+            <div class="rounded-xl bg-[#F3F5F7] p-4 space-y-8">
+              <div class="space-y-4">
+                <div class="w-full flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <img src="./assets/icons/flash.svg" alt="" />
+                    <h1 class="text-3xl font-semibold font-plus">Ultimate</h1>
+                  </div>
+                </div>
+                <p class="text-paragraph-dark font-medium">
+                  Best suits for great company!
+                </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <h1
+                  id="price3"
+                  class="text-4xl font-semibold text-dark-primary"
+                >
+                  $33.00
+                </h1>
+                <p id="priceText2" class="text-paragraph">/ month</p>
+              </div>
+              <p class="text-dark-primary">
+                If you a finance manager at big company, this plan is a perfect
+                match.
+              </p>
+              <ul class="flex flex-col gap-6">
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Everything in Pro Plan</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Daily performance reports</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Dedicated AI assistant</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Artificial intelligence</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Marketing tools & automations</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ph-fill ph-check-circle text-xl text-[#9CD323]"></i>
+                  <p class="font-semibold">Advanced security</p>
+                </li>
+              </ul>
+              <button class="btn font-semibold w-full">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="min-h-auto relative z-10 overflow-hidden bg-dark-bg w-full">
+      <div class="mx-center w-full py-24 flex items-center justify-between">
+        <div class="space-y-6">
+          <h3 class="uppercase font-plusfont-semibold text-xl text-primary">
+            download now!
+          </h3>
+          <h2 class="font-plus text-heading font-bold leading-[1.3] text-4xl">
+            Start Track Your Business <br class="md:block hidden" />
+            Expenses Today
+          </h2>
+          <p class="text-paragraph">
+            Are you ready to make your business more organized?
+            <br class="md:block hidden" />
+            Download Spend.In now!
+          </p>
+          <button class="btn">Get a Free Demo</button>
+        </div>
+        <div class="absolute right-0 bottom-0 w-[40%]">
+          <img src="./assets/img/Content.png" class="" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white py-20 px-4 md:px-12 rounded-lg">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-16"
+        >
+          <!-- Company Info -->
+          <div class="col-span-1 md:col-span-2 lg:col-span-1">
+            <div class="flex items-center space-x-2 mb-4">
+              <img src="./assets/icons/logo-dark.svg" alt="" />
+            </div>
+            <p class="text-paragraph-dark text-sm leading-relaxed">
+              Data visualization, and expense management for your business.
+            </p>
+          </div>
+
+          <!-- Product Links -->
+          <div>
+            <h5 class="text-dark-primary font-semibold mb-8">Product</h5>
+            <ul class="space-y-4 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Digital Invoice</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Insights</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Reimbursements</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Virtual Assistant</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Artificial Intelligence</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company Links -->
+          <div>
+            <h5 class="text-dark-primary font-semibold mb-8">Company</h5>
+            <ul class="space-y-4 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Newsletters</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Our Partners</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Career</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources Links -->
+          <div>
+            <h5 class="text-dark-primary font-semibold mb-8">Resources</h5>
+            <ul class="space-y-4 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Ebook & Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Follow Us Links -->
+          <div>
+            <h5 class="text-dark-primary font-semibold mb-8">Follow Us</h5>
+            <ul class="space-y-4 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+                  >YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Horizontal line -->
+        <hr class="border-paragraph-dark opacity-50 my-10" />
+
+        <!-- Bottom section with legal links -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center text-xs"
+        >
+          <div
+            class="flex flex-wrap justify-center md:justify-start items-center space-x-4 md:space-x-8 mb-4 md:mb-0"
+          >
+            <a
+              href="#"
+              class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+              >Privacy Policy</a
+            >
+            <span class="text-paragraph-dark hidden md:block">|</span>
+            <a
+              href="#"
+              class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+              >Terms & Conditions</a
+            >
+            <span class="text-paragraph-dark hidden md:block">|</span>
+            <a
+              href="#"
+              class="text-paragraph-dark hover:text-dark-primary transition-colors font-medium"
+              >Cookie Policy</a
+            >
+          </div>
+          <p class="text-paragraph-dark text-center md:text-right">
+            © Picko Lab 2022
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: 1.1,
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        breakpoints: {
+          640: { slidesPerView: 1.1 },
+          768: { slidesPerView: 2.5 },
+          1024: { slidesPerView: 3.8 },
+        },
+      });
+    </script>
     <script src="./src/js/app.js"></script>
+    <script src="./src/js/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -9,6 +9,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const successText = document.getElementById("success-text");
   const failedImg = document.getElementById("failed-img");
   const failedText = document.getElementById("failed-text");
+  const priceSwitch = document.getElementById("priceSwitch");
+  const price1Text = document.getElementById("priceText1");
+  const price1 = document.getElementById("price2");
+  const price2Text = document.getElementById("priceText2");
+  const price2 = document.getElementById("price3");
+
+  const price0 = document.getElementById("priceText0");
+  const pricei0 = document.getElementById("price0");
+  priceSwitch.addEventListener("click", () => {
+    if (priceSwitch.checked) {
+      price0.innerText = "/ Yearly";
+      pricei0.innerText = "$1.99";
+      price1Text.innerText = "/ Yearly";
+      price1.innerText = "$138.50";
+      price2Text.innerText = "/ Yearly";
+      price2.innerText = "$390.00";
+    } else {
+      price0.innerText = "/ Monthly";
+      pricei0.innerText = "$0";
+      price1Text.innerText = "/ Monthly";
+      price1.innerText = "$12.99";
+      price2Text.innerText = "/ Monthly";
+      price2.innerText = "$33.00";
+    }
+  });
 
   let activeIndex = 0; // default to first button
   let startX = 0;
